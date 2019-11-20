@@ -1,0 +1,42 @@
+.stap
+  position: relative
+  text-align: center
+  &s
+    background-color: #f1f1f1
+  &:last-child
+    &:before
+      display: none  
+  &:before
+    content: ''
+    position: absolute
+    //left: 50%
+    width: 83%
+    height: 2px
+    background-color:#7e7b78
+    display: block
+    top: 19%
+    right: -87px
+  &__img
+    max-width: 70px
+  &__text
+    max-width: 160px
+    margin: auto
+  &__title
+    font-size: 18px
+  &-block
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+@media (max-width: 991px)
+  .stap
+    flex-basis: 33%
+    &::before
+      display: none
+    &__text
+      margin-bottom: 30px
+@media (max-width: 768px)
+  .stap
+    flex-basis: 100%
+      
+
+    
